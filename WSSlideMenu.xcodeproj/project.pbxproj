@@ -15,6 +15,11 @@
 		60ED458E1F0E54E400C127D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60ED458C1F0E54E400C127D9 /* LaunchScreen.storyboard */; };
 		60ED45991F0E54E500C127D9 /* WSSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45981F0E54E500C127D9 /* WSSlideMenuTests.m */; };
 		60ED45A41F0E54E500C127D9 /* WSSlideMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45A31F0E54E500C127D9 /* WSSlideMenuUITests.m */; };
+		60ED45B61F0E555400C127D9 /* WSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45B31F0E555400C127D9 /* WSMenuViewController.m */; };
+		60ED45B71F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45B51F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.m */; };
+		60ED45BE1F0E571F00C127D9 /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45B91F0E571F00C127D9 /* ListVC.m */; };
+		60ED45BF1F0E571F00C127D9 /* LeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45BB1F0E571F00C127D9 /* LeftVC.m */; };
+		60ED45C01F0E571F00C127D9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED45BD1F0E571F00C127D9 /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		60ED459F1F0E54E500C127D9 /* WSSlideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSSlideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60ED45A31F0E54E500C127D9 /* WSSlideMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSSlideMenuUITests.m; sourceTree = "<group>"; };
 		60ED45A51F0E54E500C127D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60ED45B21F0E555400C127D9 /* WSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMenuViewController.h; sourceTree = "<group>"; };
+		60ED45B31F0E555400C127D9 /* WSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMenuViewController.m; sourceTree = "<group>"; };
+		60ED45B41F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WSMenuViewControllerExtend.h"; sourceTree = "<group>"; };
+		60ED45B51F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WSMenuViewControllerExtend.m"; sourceTree = "<group>"; };
+		60ED45B81F0E571F00C127D9 /* ListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListVC.h; sourceTree = "<group>"; };
+		60ED45B91F0E571F00C127D9 /* ListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListVC.m; sourceTree = "<group>"; };
+		60ED45BA1F0E571F00C127D9 /* LeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftVC.h; sourceTree = "<group>"; };
+		60ED45BB1F0E571F00C127D9 /* LeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftVC.m; sourceTree = "<group>"; };
+		60ED45BC1F0E571F00C127D9 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		60ED45BD1F0E571F00C127D9 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,17 @@
 		60ED457D1F0E54E400C127D9 /* WSSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				60ED45B11F0E553600C127D9 /* WSMenuClass */,
 				60ED45811F0E54E400C127D9 /* AppDelegate.h */,
 				60ED45821F0E54E400C127D9 /* AppDelegate.m */,
 				60ED45841F0E54E400C127D9 /* ViewController.h */,
 				60ED45851F0E54E400C127D9 /* ViewController.m */,
+				60ED45B81F0E571F00C127D9 /* ListVC.h */,
+				60ED45B91F0E571F00C127D9 /* ListVC.m */,
+				60ED45BA1F0E571F00C127D9 /* LeftVC.h */,
+				60ED45BB1F0E571F00C127D9 /* LeftVC.m */,
+				60ED45BC1F0E571F00C127D9 /* HomeVC.h */,
+				60ED45BD1F0E571F00C127D9 /* HomeVC.m */,
 				60ED45871F0E54E400C127D9 /* Main.storyboard */,
 				60ED458A1F0E54E400C127D9 /* Assets.xcassets */,
 				60ED458C1F0E54E400C127D9 /* LaunchScreen.storyboard */,
@@ -138,6 +160,17 @@
 				60ED45A51F0E54E500C127D9 /* Info.plist */,
 			);
 			path = WSSlideMenuUITests;
+			sourceTree = "<group>";
+		};
+		60ED45B11F0E553600C127D9 /* WSMenuClass */ = {
+			isa = PBXGroup;
+			children = (
+				60ED45B21F0E555400C127D9 /* WSMenuViewController.h */,
+				60ED45B31F0E555400C127D9 /* WSMenuViewController.m */,
+				60ED45B41F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.h */,
+				60ED45B51F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.m */,
+			);
+			name = WSMenuClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60ED45BE1F0E571F00C127D9 /* ListVC.m in Sources */,
+				60ED45B61F0E555400C127D9 /* WSMenuViewController.m in Sources */,
 				60ED45861F0E54E400C127D9 /* ViewController.m in Sources */,
 				60ED45831F0E54E400C127D9 /* AppDelegate.m in Sources */,
+				60ED45B71F0E555400C127D9 /* UIViewController+WSMenuViewControllerExtend.m in Sources */,
+				60ED45C01F0E571F00C127D9 /* HomeVC.m in Sources */,
 				60ED45801F0E54E400C127D9 /* main.m in Sources */,
+				60ED45BF1F0E571F00C127D9 /* LeftVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  WSSlideMenu
 //
-//  Created by Dotsquares on 7/6/17.
-//  Copyright © 2017 WebsoftProfession. All rights reserved.
+//  Created by WebsoftProfession on 7/6/17.
+//  WebsoftProfession.
 //
 
 #import "AppDelegate.h"
@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController *nav=[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"mainNavigation"];
+    WSMenuViewController *wsMenuVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"WSMenuViewController"];
+    wsMenuVC.leftViewController =[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LeftVC"];
+    [nav setViewControllers:@[[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HomeVC"]]];
+    wsMenuVC.homeViewController = nav;
+    wsMenuVC.drawerWidth = 260;
+    [self.window setRootViewController:wsMenuVC];
     return YES;
 }
 
